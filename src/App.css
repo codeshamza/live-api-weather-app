@@ -1,0 +1,172 @@
+
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: lightgrey;
+  overflow-x: hidden !important;
+
+}
+.searchcontainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 1.8rem;
+}
+#search {
+  padding-left:10px ;
+  background-color: white;
+  height: 2rem;
+  width: 20rem;
+  font-weight: 600;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: white;
+  border: none;
+}
+#search:focus{
+  outline: 1px solid purple;
+color: rgb(67, 0, 67);
+}
+
+.searchbtn {
+  background-color: rgb(161, 0, 161);
+  color: white;
+  border: none;
+  min-width: 100px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 900;
+
+}
+.searchbtn:focus {
+  background-color: rgb(78, 0, 78);
+}
+/* =========CARD CSS========== */
+
+ .container {
+  margin: 1.7rem 0rem;
+  height: auto;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+
+} 
+.weatherfontcontainer {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+  height: 12rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+#weathericon{
+  height: 5rem;
+  width: 5rem;
+}
+.mainweatherforecastcontainer {
+  height: 14rem;
+  display: flex;
+  background-color: rgb(255, 245, 131);
+  align-items: center;
+  padding: 1.5rem;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+.endcontainer {
+  height:7rem;
+  background-color: #5173ed;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+
+}
+#con1{
+  border-right: 1px solid rgb(255, 255, 255);
+}
+
+.endcontainerchild{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  flex: 50%;
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: white;
+}
+.endcontainericon{
+color: rgb(255, 255, 255);
+height: 3rem;
+width: 3rem;
+}
+
+/* ======RESPONSIVE CSS===== */
+@media only screen 
+  and (min-device-width: 601px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .searchcontainer {
+      margin-top: 2rem;
+    }
+    #search {
+      width: 15rem;
+    }
+    .container {
+      margin: 2rem auto;
+      height: 30rem;
+      width: 100%;
+    } 
+    .endcontainerchild{
+      column-gap: 1rem;
+      width: 20rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+  .searchcontainer {
+    margin-top: 2rem;
+  }
+  #search {
+    width: 15rem;
+  }
+  .container {
+    margin: 2rem auto;
+    height: 35rem;
+    width: 100%;
+  } 
+  .icon{
+    height: 40px;
+    width: 50px;
+  }
+  .center{
+    font-size: 1rem;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+  }
+  .Bottom{
+    font-size: .8rem;
+    height: 35px;
+    width: 80px;
+    text-align: center;
+  }
+  .endcontainerchild{
+    width: 10rem;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .endcontainer {
+    height: 10rem;
+  }
+}
