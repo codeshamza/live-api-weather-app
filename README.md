@@ -1,5 +1,5 @@
 # live-api-weather-app
-Weather App shows Weather App Using Live API
+This App shows Weather App Using Live API
 
 
 # Getting Started with Create React App
